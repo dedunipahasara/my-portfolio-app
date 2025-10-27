@@ -26,13 +26,15 @@ export default function Hero() {
         </p>
 
         {/* Button */}
-        <a
-          href="#projects"
-          className="mt-6 px-6 py-3 rounded-lg text-white border border-purple-400 
-                     hover:bg-purple-600 transition shadow-purple-400 shadow-md inline-block"
-        >
-          View My Work →
-        </a>
+          <a
+              href="/Thamasha-CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 px-6 py-3 rounded-lg text-white border border-purple-400 
+                        hover:bg-purple-600 transition shadow-purple-400 shadow-md inline-block"
+          >
+                   Show My CV →
+         </a>
 
         {/* Waving Hand CSS */}
         <style jsx>{`
