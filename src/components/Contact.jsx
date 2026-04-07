@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  const whatsappNumber = "94771234567"; 
+  const whatsappNumber = "94725842331"; 
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   const sendEmail = (e) => {
