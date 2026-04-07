@@ -80,7 +80,7 @@ export default function Contact() {
 
               <div className="flex items-center gap-6">
                 <FaLinkedin className="text-blue-400 text-2xl" />
-                <a href="#" className="text-lg hover:text-blue-300">
+                <a href="https://www.linkedin.com/in/thamashadeduni" className="text-lg hover:text-blue-300">
                   LinkedIn Profile
                 </a>
               </div>
@@ -158,14 +158,14 @@ export default function Contact() {
               <FaWhatsapp className="text-3xl" />
             </a>
 
-            <a
-              href="www.linkedin.com/in/thamashadeduni
-
-"
-              className="text-slate-300 hover:text-blue-400 transition-transform hover:scale-110"
-            >
-              <FaLinkedin className="text-3xl" />
-            </a>
+                        <a
+                href="https://www.linkedin.com/in/thamashadeduni"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-300 hover:text-blue-400 transition-transform hover:scale-110 inline-block"
+              >
+                <FaLinkedin className="text-3xl" />
+              </a>
 
             <a
               href="https://github.com/dedunipahasara"
