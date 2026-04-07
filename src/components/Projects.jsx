@@ -14,7 +14,7 @@ export default function Projects() {
     { name: "Groovo Music", link: "https://github.com/dedunipahasara/Groovo_music.git", image: groovoImg, tag: "Web Design" },
     { name: "Web Diary & Mobile", link: "https://github.com/dedunipahasara/dairy-web-mobile.git", image: diaryImg, tag: "Cross Platform" },
     { name: "Messenger Web", link: "https://github.com/dedunipahasara/mern-chat-socketio.git", image: messengerImg, tag: "Real-time" },
-    { name: "Recipe Sharing", link: "https://github.com/dedunipahasara/receipe-sharing-website.git", image: recipeImg, tag: "React UI" },
+    { name: "Recipe Sharing", link: "https://github.com/dedunipahasara/recipesharingfoodiecircle.git", image: recipeImg, tag: "React UI" },
     { name: "Note Taker App", link: "https://github.com/dedunipahasara/note-taker-mobile-app.git", image: noteTakerImg, tag: "Mobile" }
   ];
 
