@@ -14,14 +14,27 @@ export default function About() {
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-14 items-center">
 
         {/* IMAGE */}
-        <div className="flex justify-center lg:justify-end">
-          <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 sm:border-6 lg:border-8 border-white/40 shadow-[0_0_25px_rgba(255,255,255,0.15)]">
-            <img
-              src={profileImg}
-              alt="Thamasha Deduni"
-              className="w-full h-full object-cover"
-            />
+        <div className="flex justify-center lg:justify-start lg:-ml-10">
+
+          <div className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+
+            {/* OUTER GLOW RING */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/20 via-white/10 to-white/20 blur-xl animate-pulse"></div>
+
+            {/* WHITE BORDER RING */}
+            <div className="absolute inset-2 rounded-full border-2 border-white/40"></div>
+
+            {/* IMAGE */}
+            <div className="absolute inset-4 rounded-full overflow-hidden shadow-[0_0_40px_rgba(255,255,255,0.15)]">
+              <img
+                src={profileImg}
+                alt="Thamasha Deduni"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
           </div>
+
         </div>
 
         {/* TEXT */}
