@@ -13,7 +13,8 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = ["about", "skills", "projects", "contact"];
+  // ❌ removed "contact"
+  const links = ["about", "skills", "projects"];
 
   return (
     <nav
@@ -47,6 +48,7 @@ export default function Navbar() {
             </li>
           ))}
 
+          {/* ONLY CTA */}
           <li>
             <a
               href="#contact"
@@ -57,7 +59,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* HAMBURGER ICON */}
+        {/* MOBILE MENU ICON */}
         <div
           className="md:hidden text-white text-3xl cursor-pointer"
           onClick={toggleMenu}
@@ -82,6 +84,7 @@ export default function Navbar() {
               </li>
             ))}
 
+            {/* MOBILE CTA */}
             <li>
               <a
                 href="#contact"
