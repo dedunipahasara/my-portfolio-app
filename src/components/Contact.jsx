@@ -32,9 +32,9 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative min-h-screen flex items-center justify-center bg-[#0f172a] text-white px-4 sm:px-6 md:px-10 lg:px-16 py-20 pb-24 lg:pb-0 overflow-hidden"
+      className="relative min-h-screen flex flex-col justify-center bg-[#0f172a] text-white px-4 sm:px-6 md:px-10 lg:px-16 py-20 overflow-hidden"
     >
-      {/* Background */}
+      {/* BACKGROUND */}
       <div className="absolute top-[-10%] right-[-10%] w-[60%] h-[60%] bg-purple-600/10 rounded-full blur-[120px]" />
       <div className="absolute bottom-[-10%] left-[-10%] w-[60%] h-[60%] bg-rose-500/10 rounded-full blur-[120px]" />
 
@@ -64,41 +64,29 @@ export default function Contact() {
             {/* DESKTOP ICONS ONLY */}
             <div className="hidden lg:block space-y-6 pt-4">
 
-              {/* Email */}
               <div className="flex items-center gap-6">
-                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
-                  <FiMail className="text-purple-400 text-2xl" />
-                </div>
+                <FiMail className="text-purple-400 text-2xl" />
                 <a href="mailto:thamashadeduni1030@gmail.com" className="text-lg hover:text-purple-300">
                   Email Me
                 </a>
               </div>
 
-              {/* WhatsApp */}
               <div className="flex items-center gap-6">
-                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
-                  <FaWhatsapp className="text-green-400 text-2xl" />
-                </div>
+                <FaWhatsapp className="text-green-400 text-2xl" />
                 <a href={whatsappLink} target="_blank" rel="noreferrer" className="text-lg hover:text-green-300">
                   WhatsApp Chat
                 </a>
               </div>
 
-              {/* LinkedIn */}
               <div className="flex items-center gap-6">
-                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
-                  <FaLinkedin className="text-blue-400 text-2xl" />
-                </div>
+                <FaLinkedin className="text-blue-400 text-2xl" />
                 <a href="#" className="text-lg hover:text-blue-300">
                   LinkedIn Profile
                 </a>
               </div>
 
-              {/* GitHub */}
               <div className="flex items-center gap-6">
-                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
-                  <FaGithub className="text-slate-300 text-2xl" />
-                </div>
+                <FaGithub className="text-slate-300 text-2xl" />
                 <a href="https://github.com/dedunipahasara" target="_blank" rel="noreferrer" className="text-lg hover:text-slate-200">
                   GitHub Profile
                 </a>
@@ -149,33 +137,47 @@ export default function Contact() {
           </div>
 
         </div>
+
+        {/* 🔥 CLEAN BOTTOM SOCIAL ICONS (NO BOX) */}
+        <div className="mt-14 flex justify-center">
+          <div className="flex items-center gap-10">
+
+            <a
+              href="mailto:thamashadeduni1030@gmail.com"
+              className="text-slate-300 hover:text-purple-400 transition-transform hover:scale-110"
+            >
+              <FiMail className="text-3xl" />
+            </a>
+
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-300 hover:text-green-400 transition-transform hover:scale-110"
+            >
+              <FaWhatsapp className="text-3xl" />
+            </a>
+
+            <a
+              href="#"
+              className="text-slate-300 hover:text-blue-400 transition-transform hover:scale-110"
+            >
+              <FaLinkedin className="text-3xl" />
+            </a>
+
+            <a
+              href="https://github.com/dedunipahasara"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-300 hover:text-slate-100 transition-transform hover:scale-110"
+            >
+              <FaGithub className="text-3xl" />
+            </a>
+
+          </div>
+        </div>
+
       </div>
-
-      {/* MOBILE FOOTER ICON BAR */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#0f172a]/80 backdrop-blur-xl border-t border-white/10 flex justify-around items-center py-3">
-
-        <a href="mailto:thamashadeduni1030@gmail.com" className="flex flex-col items-center text-xs text-slate-300">
-          <FiMail className="text-purple-400 text-xl" />
-          Email
-        </a>
-
-        <a href={whatsappLink} target="_blank" rel="noreferrer" className="flex flex-col items-center text-xs text-slate-300">
-          <FaWhatsapp className="text-green-400 text-xl" />
-          Chat
-        </a>
-
-        <a href="#" className="flex flex-col items-center text-xs text-slate-300">
-          <FaLinkedin className="text-blue-400 text-xl" />
-          LinkedIn
-        </a>
-
-        <a href="https://github.com/dedunipahasara" target="_blank" rel="noreferrer" className="flex flex-col items-center text-xs text-slate-300">
-          <FaGithub className="text-slate-300 text-xl" />
-          GitHub
-        </a>
-
-      </div>
-
     </section>
   );
 }
