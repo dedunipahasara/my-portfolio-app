@@ -64,10 +64,8 @@ export default function Projects() {
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                 />
 
-                {/* OVERLAY */}
                 <div className="absolute inset-0 bg-[#0f172a]/70 group-hover:bg-[#0f172a]/20 transition-all duration-700"></div>
 
-                {/* TAG */}
                 <div className="absolute top-3 left-3 sm:top-4 sm:left-4 px-2 sm:px-3 py-1 bg-black/60 backdrop-blur-md border border-white/10 rounded-full text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-teal-300">
                   {p.tag}
                 </div>
@@ -89,15 +87,19 @@ export default function Projects() {
 
                 </div>
 
-                {/* LINK */}
+                {/* SOURCE CODE (FIXED HOVER ANIMATION) */}
                 <a
                   href={p.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-[10px] sm:text-xs font-semibold tracking-widest uppercase text-slate-400 hover:text-teal-300 transition"
+                  className="group/link flex items-center gap-2 text-[10px] sm:text-xs font-semibold tracking-widest uppercase text-slate-400 hover:text-teal-300 transition"
                 >
                   Source Code
-                  <FiGithub size={14} />
+
+                  <FiGithub
+                    size={14}
+                    className="transform transition-all duration-300 group-hover/link:translate-x-2 group-hover/link:text-teal-300"
+                  />
                 </a>
 
               </div>
