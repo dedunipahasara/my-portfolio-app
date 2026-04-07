@@ -159,7 +159,9 @@ export default function Contact() {
             </a>
 
             <a
-              href="#"
+              href="www.linkedin.com/in/thamashadeduni
+
+"
               className="text-slate-300 hover:text-blue-400 transition-transform hover:scale-110"
             >
               <FaLinkedin className="text-3xl" />

@@ -75,10 +75,12 @@ export default function Hero() {
               />
             </svg>
           </a>
-
-          <button className="w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 text-white font-semibold rounded-2xl border border-white/20 hover:bg-white/5 transition">
-            Get In Touch
-          </button>
+              <a
+                href="#contact"
+                className="w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 text-white font-semibold rounded-2xl border border-white/20 hover:bg-white/5 transition text-center"
+              >
+                Get In Touch
+              </a>
         </div>
 
         {/* ANIMATION */}
